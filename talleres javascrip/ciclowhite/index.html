@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ciclos </title>
+</head>
+<body>
+
+    <h1> Mi Ciclo White </h1>
+
+    <script>
+        // Contador
+        let contador = 0;
+        while (contador < 30) {
+            contador++;
+            console.log('Iteración', contador);
+        }
+
+        // Combinado con if-else
+        while (true) {
+            // Pedir al usuario que ingrese un valor mayor a 10
+            let a = prompt('Introduzca un valor mayor a 10');
+            a = parseInt(a);  // Convertir el valor a entero
+
+            if (a > 10) {
+                console.log('Es correcto');
+            } else {
+                console.log('Es incorrecto, pruebe de nuevo');
+                break; // Salir del bucle si la condición no se cumple
+            }
+        }
+    </script>
+
+</body>
+</html>

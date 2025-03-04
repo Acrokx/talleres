@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario </title>
+</head>
+<body>
+
+    <h1>Mi Coche</h1>
+    <button onclick="mostrarInformacion()">Mostrar Información del Coche</button>
+
+    <script>
+        // Creación de un diccionario (objeto en JavaScript)
+        let coche = {
+            marca: 'Mustang',
+            color: 'plateado',
+            modelo: 'inglish',
+            placa: 'SNA025'
+        };
+
+        // Función para mostrar la información del coche
+        function mostrarInformacion() {
+            console.log('Color original:', coche.color);
+            // Cambiar el color
+            coche.color = 'verde';
+            console.log('Nuevo color:', coche.color);
+
+            console.log('Marca original:', coche.marca);
+            // Cambiar la marca
+            coche.marca = 'Mazda';
+            console.log('Nueva marca:', coche.marca);
+
+            // Mostrar el objeto completo
+            console.log('Información del coche:', coche);
+            alert('Revisa la consola para ver la información del coche.');
+        }
+    </script>
+
+</body>
+</html>

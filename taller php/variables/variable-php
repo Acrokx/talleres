@@ -1,0 +1,53 @@
+<?php
+// Definir las variables
+$a = 10;
+$b = 4;
+
+// Operación de multiplicación
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: *\n";
+echo "La segunda variable es: $b\n";
+$c = $a * $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n\n";
+
+// Operación de división
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: /\n";
+echo "La segunda variable es: $b\n";
+$c = $a / $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n\n";
+
+// Operación de suma
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: +\n";
+echo "La segunda variable es: $b\n";
+$c = $a + $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n\n";
+
+// Operación de resta
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: -\n";
+echo "La segunda variable es: $b\n";
+$c = $a - $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n\n";
+
+// Operación de potencia
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: **\n";
+echo "La segunda variable es: $b\n";
+$c = $a ** $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n\n";
+
+// Operación de módulo
+echo "La primera variable es: $a\n";
+echo "El signo de la operación es: %\n";
+echo "La segunda variable es: $b\n";
+$c = $a % $b;
+echo "El resultado es: $c\n";
+echo "Tipo de la variable es: " . gettype($c) . "\n";
+?>
