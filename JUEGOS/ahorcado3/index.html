@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="screen">
+        <h1>¡Bienvenido al Juego del Ahorcado!</h1>
+        <select id="difficulty-select">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button id="start-button">Comenzar Juego</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <div id="game-container">
+            <div id="timer">Tiempo restante: 60s</div>
+            <div id="hangman-image"></div>
+            <div id="word-display"></div>
+            <div id="letters"></div>
+            <div id="attempts-container">
+                Intentos restantes: <span id="attempts-left">6</span>
+            </div>
+            <div id="game-message" class="hidden"></div>
+            <button id="exit-button" class="hidden">Salir del Juego</button>
+            <button id="reset-button" class="hidden">Reiniciar Juego</button>
+        </div>
+    </div>
+
+    <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+    <audio id="game-over-sound" src="game-over.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

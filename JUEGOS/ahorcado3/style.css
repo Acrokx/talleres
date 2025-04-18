@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    background-image: url('ahorcad.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.screen {
+    display: none;
+}
+
+.screen:not(.hidden) {
+    display: block;
+}
+
+#game-container {
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 800px;
+}
+
+#hangman-image {
+    margin-bottom: 20px;
+    height: 150px;
+    font-size: 50px;
+}
+
+#word-display {
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#letters button {
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: white;
+}
+
+#letters button:hover {
+    background-color: #0b79d0;
+    transform: scale(1.1);
+}
+
+#letters button:disabled {
+    background-color: #c0c0c0;
+}
+
+#attempts-container {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#game-message {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#game-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#game-screen {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#exit-button {
+    background-color: #f44336; /* Rojo */
+}
+
+#exit-button:hover {
+    background-color: #e53935;
+}
+
+#start-button {
+    font-size: 20px;
+    background-color: #ff9800;
+}
+
+#start-button:hover {
+    background-color: #e68900;
+}
